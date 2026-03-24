@@ -1,0 +1,331 @@
+<button type="button" id="pdpAdsTrigger" class="advertisement-trigger" data-modal="pdpAdsModal">
+    <div class="advertisement" role="region" aria-label="advertisement game">
+        <img src="https://placehold.co/88x143" alt="Mario Kart box art" class="img" width="88" height="143" />
+
+        <div class="band" aria-hidden="false">
+            <svg class="lightning" viewBox="0 0 140 73" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
+                <path
+                    d="M72.6133 25.5095L0 -19.8959L131.215 19.5364L78.0229 56.7939L139.338 98.4938L19.549 63.4162L72.6133 25.5095Z"
+                    fill="#FFE591" fill-opacity="0.5" />
+            </svg>
+
+            <div class="content">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <h3 class="title">FREE MARIO KART WORLD</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                        <path d="M0.75 8.75L4.75 4.75L0.75 0.75" stroke="#646464" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p class="desc" style="text-align: start;">
+                    Free Mario Kart World when you purchase Nintendo Switch 2 Console. Promo
+                    is valid until June 15, 2025.
+                </p>
+            </div>
+        </div>
+    </div>
+</button>
+
+
+
+<!-- PDP ADS MODAL -->
+<div class="pdp-modal">
+
+    <!-- Modal Overlay -->
+    <div id="pdpAdsModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="pdpAdsModalTitle">
+
+        <!-- Modal Content -->
+        <div class="modal-content">
+
+            <!-- Close Button -->
+            <button type="button" class="close-btn" style="place-content: end; top: 18px; right: 16px;"
+                aria-label="Close modal">
+                &times;
+            </button>
+
+            <!-- Modal Title -->
+            <h2 id="pdpAdsModalTitle" class="modal-title">
+                PRE-ORDER EXCLUSIVE
+            </h2>
+
+            <!-- Description -->
+            <p class="section-description">
+                PRE-ORDER NOW and get awesome FREEBIES:
+            </p>
+
+            <!-- Freebies List -->
+            <ul class="section-list">
+                <li>Samsung Galaxy Watch FE worth Pxxx</li>
+                <li>Samsung Galaxy Tab A11 (Gray)</li>
+                <li>Samsung Microwave Oven (Pink)</li>
+                <li>Samsung 25W Adapter worth Pxxx</li>
+                <li>Double Storage Upgrade worth P14,000</li>
+                <li>Extra 500 eCashback Member Exclusive</li>
+            </ul>
+
+            <!-- Additional Info -->
+            <p class="modal-date">
+                Pre-order starts February 26, 2026.<br>
+                Delivery begins March 28, 2026 onwards.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+    .advertisement {
+        position: relative;
+        width: 100%;
+    }
+
+    .advertisement .band {
+        height: 113px;
+        background: linear-gradient(97.19deg, #fffbdb -10.67%, #fffbb3 176.54%);
+        border-radius: 8px;
+        padding: 0 10px 0 150px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .advertisement .band .lightning {
+        position: absolute;
+        width: 126.49px;
+        height: 132.03px;
+        top: -32.84px;
+        left: 240px;
+        transform: rotate(5.87deg);
+        opacity: 1;
+        z-index: 0;
+        pointer-events: none;
+        will-change: transform, opacity;
+        display: none;
+    }
+
+    .advertisement .content {
+        position: relative;
+        z-index: 2;
+        min-width: 0;
+        gap: 8px;
+    }
+
+    .advertisement .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin: 0;
+        color: #282727;
+    }
+
+    .advertisement .desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #282727;
+        margin: 0;
+    }
+
+    .advertisement .img {
+        position: absolute;
+        left: 35px;
+        top: -37px;
+        width: 88px;
+        height: 143px;
+        object-fit: cover;
+        z-index: 3;
+        box-shadow: 0px 3px 6px 0px #0000001a,
+            0px 10px 10px 0px #00000017,
+            0px 23px 14px 0px #0000000d,
+            0px 40px 16px 0px #00000003,
+            0px 63px 18px 0px #00000000;
+    }
+
+    @media (max-width: 1023px) {
+        .advertisement .band {
+            background: linear-gradient(97.19deg, #ffffff -10.67%, #ffe283 176.54%);
+        }
+
+        .advertisement .title {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .advertisement .desc {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .advertisement .img {
+            left: 35px;
+            top: 0;
+            width: 76px;
+            height: 113px;
+            box-shadow: 0px 2.46px 4.92px 0px #0000001A,
+                0px 8.2px 8.2px 0px #00000017,
+                0px 18.87px 11.48px 0px #0000000D,
+                0px 32.81px 13.12px 0px #00000003,
+                0px 51.67px 14.76px 0px #00000000;
+        }
+
+        .advertisement .band {
+            border-radius: 0;
+        }
+
+        .advertisement .band .lightning {
+            left: 500px;
+            width: 158px;
+            height: 135px;
+            top: -6px;
+            transform: rotate(6deg);
+            display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .advertisement .title {
+            font-size: 16px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .advertisement .desc {
+            font-size: 12px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .advertisement .band {
+            height: 95px;
+            padding: 0 10px 0 135px;
+        }
+
+        .advertisement .img {
+            left: 35px;
+            width: 66px;
+            height: 95px;
+        }
+
+        .advertisement .band .lightning {
+            left: 300px;
+            width: 158px;
+            height: 106px;
+            top: -6px;
+            transform: rotate(6deg);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .advertisement .title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .advertisement .desc {
+            font-size: 10px;
+            line-height: 14px;
+        }
+
+        .advertisement .band {
+            height: 73px;
+            padding: 0 10px 0 80px;
+        }
+
+        .advertisement .img {
+            left: 17.94px;
+            width: 45px;
+            height: 73px;
+        }
+
+        .advertisement .band .lightning {
+            left: 210px;
+            width: 146px;
+            height: 85px;
+            top: -6px;
+            transform: rotate(6deg);
+        }
+    }
+
+    /* Overlay */
+    .pdp-ads-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 99999;
+    }
+
+    /* Active state */
+    .pdp-ads-overlay.active {
+        display: flex;
+    }
+
+    /* Modal */
+    .pdp-ads-modal {
+        background: #fff;
+        width: 100%;
+        max-width: 480px;
+        border-radius: 16px;
+        padding: 28px 24px;
+        position: relative;
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.15),
+            0 5px 10px rgba(0, 0, 0, 0.05);
+
+        animation: pdpAdsFadeIn 0.25s ease;
+    }
+
+    #pdpAdsModal :is(.section-description, .modal-date) {
+        margin: 0 !important;
+    }
+
+
+    #pdpAdsModal .section-list {
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 0 0 0 16px;
+        color: var(--SecondaryGray-SecondaryText-SecondaryGray80, #767676) !important;
+    }
+
+    .pdp-ads-close {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        font-size: 26px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    @keyframes pdpAdsFadeIn {
+        from {
+            opacity: 0;
+            transform: scale(.92) translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+</style>
